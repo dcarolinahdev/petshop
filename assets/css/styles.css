@@ -2,10 +2,12 @@
 {
     --green-dark-1: #2F9304;
     --green-1: #3FC207;
-    --green-2: #67D547;
+    --green-3: #62b33f;
+    --green-2: #60e138;
     --green-blue-1: #8EE787;
     --green-blue-2: #B6FAC7;
     --brown: #6c584c;
+    --brown-dark: #352821;
     --blue-ocean: #335c67;
 }
 
@@ -23,4 +25,91 @@ html
 
 body {
     background-color: var(--green-blue-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* ------ NAVBAR ------ */
+
+.navbar {
+    background-color: var(--green-2);
+    padding: 1rem 2rem;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='white' class='bi bi-list' viewBox='0 0 16 16'> <path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/> </svg>");
+}
+
+.navbar .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand .logo {
+    width: 65px;
+}
+
+.navbar-toggler-icon {
+    font-size: 2rem;
+}
+
+.navbar-nav {
+    gap: 0.3rem;
+    padding: 1rem 0rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-main {
+    --bs-navbar-nav-link-padding-x: 2.5rem;
+    padding: 1rem 2.5rem;
+    border: 0.5px solid var(--green-1);
+    border-radius: 5%;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.nav-main:hover {
+    background-color: var(--green-1);
+    color: var(--green-dark-1);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--green-dark-1);
+}
+
+.nav-sec {
+    background-color: var(--green-1);
+    border-radius: 50%;
+    padding: 1.5rem;
+    --bs-navbar-nav-link-padding-x: 1.5rem;
+    color: white;
+}
+
+.nav-sec:hover {
+    color: var(--green-dark-1);
+}
+
+/* ------ FOOTER ------ */
+
+footer {
+    background-color: var(--green-2);
+    border-top: 2px solid var(--blue-ocean);
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer a {
+    background-color: var(--green-1);
+    border-radius: 50%;
+    padding: 1rem;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--green-dark-1);
 }
