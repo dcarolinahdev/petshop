@@ -1,0 +1,26 @@
+:root
+{
+    --green-dark-1: #2F9304;
+    --green-1: #3FC207;
+    --green-2: #67D547;
+    --green-blue-1: #8EE787;
+    --green-blue-2: #B6FAC7;
+    --brown: #6c584c;
+    --blue-ocean: #335c67;
+}
+
+/* ------ GENERAL ------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--green-blue-2);
+}
