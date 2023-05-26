@@ -6,6 +6,7 @@
     --green-2: #60e138;
     --green-blue-1: #8EE787;
     --green-blue-2: #B6FAC7;
+    --green-ultra-light: #E5FFD7;
     --brown: #6c584c;
     --brown-dark: #352821;
     --blue-ocean: #335c67;
@@ -24,11 +25,15 @@ html
 }
 
 body {
-    background-color: var(--green-blue-2);
+    background-color: var(--green-ultra-light);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+}
+
+h1 {
+    color: var(--green-dark-1);
 }
 
 /* ------ NAVBAR ------ */
@@ -91,6 +96,47 @@ body {
 
 .nav-sec:hover {
     color: var(--green-dark-1);
+}
+
+/* ------ MAIN ------ */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    width: 80%;
+    margin: 2rem 0rem;
+    padding: 2rem;
+}
+
+/* ------ HERO ------ */
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card-img-overlay h1 {
+    color: var(--green-dark-1);
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.card-img-overlay .card-text {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 /* ------ FOOTER ------ */
