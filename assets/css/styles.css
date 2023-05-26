@@ -36,6 +36,18 @@ h1 {
     color: var(--green-dark-1);
 }
 
+.btn-petshop {
+    background-color: var(--green-1);
+    color: white;
+}
+
+.btn-petshop:hover,
+.btn-petshop:active {
+    background-color: transparent;
+    border-color: var(--green-1);
+    color: var(--green-1);
+}
+
 /* ------ NAVBAR ------ */
 
 .navbar {
@@ -107,7 +119,7 @@ h1 {
 }
 
 .section {
-    width: 80%;
+    width: 90%;
     margin: 2rem 0rem;
     padding: 2rem;
 }
@@ -134,9 +146,38 @@ h1 {
     font-size: 1.6rem;
 }
 
-.hero img {
+.hero img,
+.card-about img {
     width: 100%;
     height: auto;
+}
+
+/* ------ ABOUT ------ */
+
+.card-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mv-img,
+.mv-main {
+    width: 100%;
+}
+
+.mv-main {
+    margin-top: 1.5rem;
+}
+
+.mv {
+    border: 2px solid var(--blue-ocean);
+    padding: 2rem 1rem;
+    margin-top: 0.5rem;
+}
+
+.mv-buttons a {
+    padding: 1rem 3rem;
 }
 
 /* ------ FOOTER ------ */
@@ -159,3 +200,26 @@ footer a {
 footer a:hover {
     color: var(--green-dark-1);
 }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .mv-img,
+    .mv-main {
+        width: 47.5%;
+    }
+    .mv-main {
+        margin-top: 0rem;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
