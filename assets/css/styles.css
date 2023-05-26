@@ -180,6 +180,34 @@ h1 {
     padding: 1rem 3rem;
 }
 
+/* ------ PRODUCTS ------ */
+
+.carousel p,
+.carousel h3 {
+    color: var(--green-dark-1);
+}
+
+.carousel-caption {
+    background-color: #ffffff9e;
+    --bs-bg-opacity: 0.5;
+    padding: 1rem;
+}
+
+.product {
+    width: 35vw;
+}
+
+.bg-product {
+    background-color: var(--green-blue-1);
+    padding: 2.5rem;
+}
+
+.bg-product img {
+    -webkit-box-shadow: 0px 0px 30px 15px rgba(47,147,4,1);
+    -moz-box-shadow: 0px 0px 30px 15px rgba(47,147,4,1);
+    box-shadow: 0px 0px 30px 15px rgba(47,147,4,1);
+}
+
 /* ------ FOOTER ------ */
 
 footer {
