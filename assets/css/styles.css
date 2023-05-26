@@ -116,11 +116,12 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 7rem;
 }
 
 .section {
     width: 90%;
-    margin: 2rem 0rem;
+    margin: 2.5rem 0rem;
     padding: 2rem;
 }
 
@@ -188,16 +189,21 @@ h1 {
 }
 
 .carousel-caption {
-    background-color: #ffffff9e;
+    background-color: #ffffffc9;
     --bs-bg-opacity: 0.5;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
-.product {
-    width: 35vw;
+.product img {
+    width: 60vw;
+    height: 42vh;
 }
 
 .bg-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: var(--green-blue-1);
     padding: 2.5rem;
 }
@@ -213,7 +219,7 @@ h1 {
 footer {
     background-color: var(--green-2);
     border-top: 2px solid var(--blue-ocean);
-    padding: 1.5rem 2rem;
+    padding: 3.5rem 2rem;
     font-size: 1.5rem;
     color: white;
 }
@@ -229,8 +235,18 @@ footer a:hover {
     color: var(--green-dark-1);
 }
 
+/* ------ MEDIA ------ */
+
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { }
+@media (min-width: 576px) {
+    .product img {
+        width: 50vw;
+        height: 35vh;
+    }
+    .bg-product {
+        padding: 3rem;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -241,13 +257,40 @@ footer a:hover {
     .mv-main {
         margin-top: 0rem;
     }
+    .product img {
+        width: 45vw;
+        height: 30vh;
+    }
+    .bg-product {
+        padding: 4rem;
+    }
  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { }
+@media (min-width: 992px) {
+    .product img {
+        width: 40vw;
+        height: 27vh;
+    }
+    .carousel-caption {
+        bottom: 5rem;
+    }
+    .bg-product {
+        padding: 5rem;
+    }
+ }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+    .bg-product {
+        padding: 6rem;
+    }
+ }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { }
+@media (min-width: 1400px) {
+    .product img {
+        width: 42vw;
+        height: 28vh;
+    }
+ }
