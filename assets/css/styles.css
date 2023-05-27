@@ -125,6 +125,10 @@ h1 {
     padding: 2rem;
 }
 
+.section h1 {
+    margin-bottom: 2rem;
+}
+
 /* ------ HERO ------ */
 
 .card-img-overlay {
@@ -160,6 +164,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
 .mv-img,
@@ -172,13 +177,20 @@ h1 {
 }
 
 .mv {
-    border: 2px solid var(--blue-ocean);
+    border: 2px solid var(--green-1);
+    border-radius: 1rem;
     padding: 2rem 1rem;
     margin-top: 0.5rem;
 }
 
 .mv-buttons a {
     padding: 1rem 3rem;
+}
+
+.box-green {
+    -webkit-box-shadow: 0px 0px 30px 15px var(--green-2);
+    -moz-box-shadow: 0px 0px 30px 15px var(--green-2);
+    box-shadow: 0px 0px 30px 15px var(--green-2);
 }
 
 /* ------ PRODUCTS ------ */
@@ -204,14 +216,15 @@ h1 {
     justify-content: center;
     align-items: center;
 
-    background-color: var(--green-blue-1);
+    background-color: var(--green-blue-2);
+    border-radius: 1rem;
     padding: 2.5rem;
 }
 
 .bg-product img {
-    -webkit-box-shadow: 0px 0px 30px 15px rgba(47,147,4,1);
-    -moz-box-shadow: 0px 0px 30px 15px rgba(47,147,4,1);
-    box-shadow: 0px 0px 30px 15px rgba(47,147,4,1);
+    -webkit-box-shadow: 0px 0px 30px 15px var(--green-1);
+    -moz-box-shadow: 0px 0px 30px 15px var(--green-1);
+    box-shadow: 0px 0px 30px 15px var(--green-1);
 }
 
 /* ------ FOOTER ------ */
@@ -244,7 +257,7 @@ footer a:hover {
         height: 35vh;
     }
     .bg-product {
-        padding: 3rem;
+        padding: 1rem;
     }
 }
 
@@ -262,7 +275,7 @@ footer a:hover {
         height: 30vh;
     }
     .bg-product {
-        padding: 4rem;
+        padding: 2rem;
     }
  }
 
@@ -276,14 +289,14 @@ footer a:hover {
         bottom: 5rem;
     }
     .bg-product {
-        padding: 5rem;
+        padding: 3rem;
     }
  }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .bg-product {
-        padding: 6rem;
+        padding: 4rem;
     }
  }
 
