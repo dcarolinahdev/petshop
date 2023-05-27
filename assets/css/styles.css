@@ -250,6 +250,7 @@ footer a:hover {
 
 /* ------ TOYS ------ */
 
+.section.pharmacy,
 .section.toys {
     display: flex;
     flex-direction: column;
