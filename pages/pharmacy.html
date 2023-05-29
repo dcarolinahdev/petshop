@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
           <a class="navbar-brand" href="#">
               <img class="logo" src="../assets/img/logo-c.png" alt="Logo">
@@ -51,6 +51,89 @@
             </div>
       </div>
     </nav>
+
+    <div class="main">
+      <div class="section pharmacy">
+        <div class="toys-title">
+          <h1>Pharmacy</h1>
+        </div>
+
+        <div class="filters">
+          <div class="d-flex flex-column filter">
+              <h5>Ordenar por:</h5>
+              <select id="select-ordering" class="form-select" aria-label="asc">
+                  <option class="selectOrder" value="asc">Ascendente</option>
+                  <option class="selectOrder" value="desc">Descendente</option>
+              </select>
+          </div>
+          <div class="d-flex flex-column filter">
+              <h5>Buscar:</h5>
+              <form class=" search  d-flex " role="search">
+                  <input id="searchInText" class="form-control me-2" type="search" placeholder="Juguete" aria-label="Search">
+                  <button id="buttonSearch" class="btn btn-petshop" type="submit"><i class="bi bi-search"></i></button>
+              </form>
+          </div>
+        </div>
+
+        <div class="container-cards d-flex justify-content-evenly align-items-center flex-wrap gap-4" id="container-toys">
+
+          <div class="card card-petshop box-prod">
+              <img class="object-fit-cover" src="../assets/img/products/med1.png" alt="Medicine">
+              <ul class="product_buttons">
+                  <li>
+                      <button class="btn btn-mindy-two isFavorite">
+                          <i id="fav${producto._id}" class="bi bi-heart-fill"></i>
+                      </button>
+                  </li>
+                  <li>
+                      <button class="btn btn-mindy-two addToCart">
+                          <i class="bi bi-cart-fill"></i>
+                      </button>
+                  </li>
+              </ul>
+              <div class="last-units">
+                  <p class="m-0">lasts 5 units</p>
+              </div>
+              <div class="card-description d-flex flex-column align-items-center p-3">
+                  <div class="card-title">
+                      <h4 class="mb-0" >Name Medicine</h4>
+                  </div>
+                  <div class="">
+                      <h5>$ 125</h5>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card card-petshop box-prod">
+              <img class="object-fit-cover" src="../assets/img/products/med2.jpg" alt="Medicine">
+              <ul class="product_buttons">
+                  <li>
+                      <button class="btn btn-mindy-two isFavorite">
+                          <i id="fav${producto._id}" class="bi bi-heart-fill"></i>
+                      </button>
+                  </li>
+                  <li>
+                      <button class="btn btn-mindy-two addToCart">
+                          <i class="bi bi-cart-fill"></i>
+                      </button>
+                  </li>
+              </ul>
+              <div class="last-units invisible">
+                  <p class="m-0">lasts 5 units</p>
+              </div>
+              <div class="card-description d-flex flex-column align-items-center p-3">
+                  <div class="card-title">
+                      <h4 class="mb-0" >Name Medicine</h4>
+                  </div>
+                  <div class="">
+                      <h5>$ 99</h5>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center">
         <div class="col-md-4 d-flex align-items-center">

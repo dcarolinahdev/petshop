@@ -36,16 +36,16 @@
                     <a class="nav-link nav-main active" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-main" href="./pages/toys.html">Toys</a>
+                    <a class="nav-link nav-main" href="./toys.html">Toys</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-main" href="./pages/pharmacy.html">Pharmacy</a>
+                    <a class="nav-link nav-main" href="./pharmacy.html">Pharmacy</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-sec" href="./pages/favorites.html"><i class="bi bi-heart-fill"></i></a>
+                    <a class="nav-link nav-sec" href="./favorites.html"><i class="bi bi-heart-fill"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-sec" href="./pages/cart.html"><i class="bi bi-bag-fill"></i></a>
+                    <a class="nav-link nav-sec" href="./cart.html"><i class="bi bi-bag-fill"></i></a>
                   </li>
                 </ul>
               </div>
@@ -55,7 +55,7 @@
     <div class="main">
       <div class="section toys">
         <div class="toys-title">
-          <h1>Toys</h1>
+          <h1>Section</h1>
         </div>
 
         <div class="filters">
@@ -77,58 +77,9 @@
 
         <div class="container-cards d-flex justify-content-evenly align-items-center flex-wrap gap-4" id="container-toys">
 
-          <div class="card card-petshop box-prod">
-              <img class="object-fit-cover" src="../assets/img/products/jug1.jpg" alt="Toy">
-              <ul class="product_buttons">
-                  <li>
-                      <button class="btn btn-mindy-two isFavorite">
-                          <i id="fav${producto._id}" class="bi bi-heart-fill"></i>
-                      </button>
-                  </li>
-                  <li>
-                      <button class="btn btn-mindy-two addToCart">
-                          <i class="bi bi-cart-fill"></i>
-                      </button>
-                  </li>
-              </ul>
-              <div class="last-units">
-                  <p class="m-0">lasts 5 units</p>
-              </div>
-              <div class="card-description d-flex flex-column align-items-center p-3">
-                  <div class="card-title">
-                      <h4 class="mb-0" >Name toy</h4>
-                  </div>
-                  <div class="">
-                      <h5>$ 125</h5>
-                  </div>
-              </div>
-          </div>
-
-          <div class="card card-petshop box-prod">
-              <img class="object-fit-cover" src="../assets/img/products/jug2.jpg" alt="Toy">
-              <ul class="product_buttons">
-                  <li>
-                      <button class="btn btn-mindy-two isFavorite">
-                          <i id="fav${producto._id}" class="bi bi-heart-fill"></i>
-                      </button>
-                  </li>
-                  <li>
-                      <button class="btn btn-mindy-two addToCart">
-                          <i class="bi bi-cart-fill"></i>
-                      </button>
-                  </li>
-              </ul>
-              <div class="last-units invisible">
-                  <p class="m-0">lasts 5 units</p>
-              </div>
-              <div class="card-description d-flex flex-column align-items-center p-3">
-                  <div class="card-title">
-                      <h4 class="mb-0" >Name toy</h4>
-                  </div>
-                  <div class="">
-                      <h5>$ 99</h5>
-                  </div>
-              </div>
+          <div class="empty">
+            <img src="../assets/img/sad.png" alt="list products empty">
+            <p class="">Sorry, we didn't find products with your search</p>
           </div>
 
         </div>
