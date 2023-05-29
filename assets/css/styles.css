@@ -4,12 +4,14 @@
     --green-1: #3FC207;
     --green-3: #62b33f;
     --green-2: #60e138;
-    --green-blue-1: #8EE787;
-    --green-blue-2: #B6FAC7;
+    --green-blue: #a0f19a;
     --green-ultra-light: #E5FFD7;
+
     --brown: #6c584c;
     --brown-dark: #352821;
+
     --blue-ocean: #335c67;
+    --blue-light: #B6FAC7;
 }
 
 /* ------ GENERAL ------ */
@@ -338,6 +340,53 @@ footer a:hover {
     font-weight: bold;
     font-size: 3.2rem;
     padding: 1rem 2rem;
+}
+
+/* ------ favorites ------ */
+
+.main-favorites h1 {
+    margin: 3rem 0;
+}
+
+.container-fav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+}
+
+.div-fav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--green-blue);
+    width: fit-content;
+    padding: 1rem;
+    position: relative;
+}
+
+.div-fav img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.div-fav .card-body {
+    width: 80%;
+    padding: 0.5rem 0;
+    position: absolute;
+    top: 70%;
+    background-color: var(--blue-light);
+    opacity: 0.8;
+}
+
+.div-fav .name {
+    color: var(--green-dark-1);
+}
+
+.div-fav .type {
+    color: var(--blue-ocean);
 }
 
 /* ------ MEDIA ------ */
