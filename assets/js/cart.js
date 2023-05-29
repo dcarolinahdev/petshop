@@ -40,7 +40,7 @@ async function fecthApi() {
     }
 }
 
-fecthApi();
+// fecthApi();
 
 /* FUNCTION: refresca el numero de elementos del carrito en el navbar */
 function refresh_cart_in_navbar(number_items) {
@@ -132,4 +132,11 @@ function updateValues (idInput) {
     printSummary(cant, subtotal)
     // actujalizando navbar
     refresh_cart_in_navbar(cant);
+}
+
+function testUpdateCart (idInput){
+    let input_test = document.getElementById(idInput).value
+    let subt_test = 125 * input_test
+    document.getElementById("subtexample").innerHTML = `$ ${subt_test}`
+    document.getElementById('total').innerHTML = `$ ${subt_test + 10}`;
 }
