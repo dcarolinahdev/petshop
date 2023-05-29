@@ -40,7 +40,7 @@ async function fecthApi() {
     }
 }
 
-fecthApi();
+// fecthApi();
 
 /* FUNCTION: refresca el numero de elementos del carrito en el navbar */
 function refresh_cart_in_navbar(number_items) {
@@ -103,10 +103,10 @@ function printSummary(cant, subtotal) {
     p_subtotal.innerHTML = `$ ${subtotal}`;
 
     const p_shipping = document.getElementById('shipping');
-    p_shipping.innerHTML = `$ 2`;
+    p_shipping.innerHTML = `$ 10`;
 
     const p_total = document.getElementById('total');
-    p_total.innerHTML = `$ ${subtotal + 2}`;
+    p_total.innerHTML = `$ ${subtotal + 10}`;
 }
 
 /* FUNCTION: calcula subtotal */
@@ -132,4 +132,11 @@ function updateValues (idInput) {
     printSummary(cant, subtotal)
     // actujalizando navbar
     refresh_cart_in_navbar(cant);
+}
+
+function testUpdateCart (idInput){
+    let input_test = document.getElementById(idInput).value
+    let subt_test = 125 * input_test
+    document.getElementById("subtexample").innerHTML = `$ ${subt_test}`
+    document.getElementById('total').innerHTML = `$ ${subt_test + 10}`;
 }

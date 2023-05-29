@@ -52,6 +52,73 @@
         </div>
     </nav>
 
+    <div class="d-flex justify-content-center align-items-center back-cart">
+      <div class="card-cart d-flex justify-content-between flex-wrap">
+          <!-- main -->
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 div-cart">
+              <!-- title cart -->
+              <div>
+                  <h1>Your purchase</h1>
+                  <h5 class="fst-italic">Products</h5>
+              </div>
+              <!-- div for each item -->
+              <div id="items">
+
+                <div class="row d-flex justify-content-between align-items-center mb-4">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                        <img src="../assets/img/products/med1.png"
+                        class="img-fluid rounded" alt="Product name">
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <h6 class="fw-bold text-body-secondary">Type</h6>
+                        <h6 class="fw-bold">Product</h6>
+                        <h6 class="fw-bold">$ 125</h6>
+                    </div>
+
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                        <h6 class="fw-bold text-body-secondary">Cantidad</h6>
+                        <input id="nexample" class="form-control form-control-sm quantity"
+                        name="quantity" type="number" min="1"
+                        oninput='testUpdateCart("nexample")' />
+                    </div>
+
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-nowrap">
+                        <h6 class="fw-bold text-body-secondary text-end">Subtotal</h6>
+                        <h6 class="text-end" id="subtexample">
+                        $ 125</h6>
+                    </div>
+                </div>
+
+              </div>
+
+          </div>
+          <!-- summary -->
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 summary">
+              <section>
+                  <h2>Summary</h2>
+                  <div class="d-flex flex-column mt-3 mb-1 summary-table">
+                      <div class="d-flex justify-content-between">
+                          <p class="fs-6 text-uppercase fst-italic" id="amount"></p>
+                          <p class="fs-6 fst-italic" id="subtotal"></p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                          <p class="fs-6 text-uppercase fst-italic">Shipping</p>
+                          <p class="fs-6 fst-italic" id="shipping">$ 10</p>
+                      </div>
+                      <div class="d-flex justify-content-between fw-bold">
+                          <p class="fs-5 text-uppercase">Total</p>
+                          <p class="fs-5" id="total">$ 10</p>
+                      </div>
+                  </div>
+              </section>
+              <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-petshop">Buy</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
     <footer class="d-flex flex-wrap justify-content-between align-items-center">
         <div class="col-md-4 d-flex align-items-center">
           <span class="mb-3 mb-md-0 fst-italic">© 2023 dcarolinahdev</span>
@@ -70,7 +137,7 @@
     </footer>
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"> </script>
-    <!--own scripts
-    <script src="../assets/js/cart.js"></script>-->
+    <!--own scripts-->
+    <script src="../assets/js/cart.js"></script>
 </body>
 </html>
