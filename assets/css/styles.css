@@ -328,6 +328,18 @@ footer a:hover {
     margin-bottom: 0.25rem;
 }
 
+/* ------ EMPTY ------ */
+
+.empty {
+    display: flex;
+    align-items: center;
+    background-color: var(--green-2);
+    color: var(--green-dark-1);
+    font-weight: bold;
+    font-size: 3.2rem;
+    padding: 1rem 2rem;
+}
+
 /* ------ MEDIA ------ */
 
 /* Small devices (landscape phones, 576px and up)*/
