@@ -103,10 +103,10 @@ function printSummary(cant, subtotal) {
     p_subtotal.innerHTML = `$ ${subtotal}`;
 
     const p_shipping = document.getElementById('shipping');
-    p_shipping.innerHTML = `$ 2`;
+    p_shipping.innerHTML = `$ 10`;
 
     const p_total = document.getElementById('total');
-    p_total.innerHTML = `$ ${subtotal + 2}`;
+    p_total.innerHTML = `$ ${subtotal + 10}`;
 }
 
 /* FUNCTION: calcula subtotal */
